@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
+import Donate from '../Components/Donate'
 import { Box } from '@chakra-ui/react'
 
 const MainLayout = () => {
@@ -15,6 +16,7 @@ const MainLayout = () => {
     >
         <Navbar/>
         <Outlet />
+        <Donate/>
     </Box>
   )
 }
