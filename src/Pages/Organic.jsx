@@ -1,13 +1,15 @@
 import { Flex } from '@chakra-ui/react'
-import React from 'react'
-// import { motion } from 'framer-motion'
+
+import Player from '../Components/Player'
+import Playlist from '../Components/Playlist'
+
 
 const Organic = () => {
   return (
-    <Flex h='90vh' >
-
-        Organic
-    </Flex>
+    <Flex h='90vh' justifyContent='space-around' pb={10}>
+      <Player/>
+      <Playlist/>
+   </Flex>
   )
 }
 

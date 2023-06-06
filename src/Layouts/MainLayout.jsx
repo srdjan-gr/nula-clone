@@ -16,7 +16,7 @@ const MainLayout = () => {
   const location = useLocation()
 
   return (
-    <Box color='white' bgSize='cover'>
+    <Box color='white' bgSize='cover' zIndex='1'>
 
         <Box   
           bgImage={location.pathname === '/organic' ? "url('../public/img/organic.jpg')" : location.pathname === '/beatz' ? "url('../public/img/beatz.jpg')" : "url('../public/img/classic.jpg')"}>
