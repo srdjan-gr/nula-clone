@@ -4,7 +4,7 @@ import Playlist from '../Components/Playlist'
 
 const Home = () => {
   return (
-    <Flex h='90vh' justifyContent='space-around' pb={10}>
+    <Flex h='680px' justifyContent='space-around' pb={10}>
       <Player/>
       <Playlist/>
     </Flex>

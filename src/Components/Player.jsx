@@ -11,7 +11,7 @@ const spin = keyframes`
 const Player = () => {
 
   const [isPlaying, setIsPlaying] = useState(false)
-  const recordRotate = `${spin} infinite 5s linear`;
+  const recordRotate = `${spin} infinite 4s linear`;
 
   return (
     <Flex>
@@ -54,8 +54,14 @@ const Player = () => {
         </Flex>
 
         {/* Vinyl record */}
-        <Flex  position='absolute' zIndex='5' alignItems='center' justifyContent='center'>
-            <Image src='../public/img/vinyln.png' alt='radio nula logo' h='500px' my='60px' mx='90px'  animation={isPlaying ? recordRotate : ''}  />
+        <Flex  position='absolute' zIndex='5' alignItems='center' justifyContent='center' >
+            <Image src='../public/img/vinyln.png' alt='radio nula logo' h='500px' my='60px' mx='90px'   />
+          
+          
+            {/* Image of current track that is playing */}
+            {isPlaying ? ( <Image position='absolute' zIndex='6' src='../public/data/covers/bob-uprising.jpg' alt='radio nula logo' h='260px' w='260px'  borderRadius='50%'  animation={isPlaying ? recordRotate : ''}  />) : ''}
+
+            <Box w='25px' h='25px' bg='black' borderRadius='50%' position='absolute' zIndex='7'></Box>
         </Flex>
     </Flex>
   )
