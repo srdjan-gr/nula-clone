@@ -4,12 +4,13 @@ import React from 'react'
 const Mearch = () => {
   return (
 
-    <Box w='50%'>
+    <Box w='45%'>
         <Flex direction='column'>
             <Image src='../public/img/shop/shop-1.png' alt='buy mearch banner'
                 w='100%'
                 mb={8}
                 cursor='pointer'
+                _hover={{transform: 'scale(1.02)', transition: 'transform .15s linear'}}
             />
             <Image src='../public/img/shop/shop-2.png' alt='buy mearch banner'
                 w='100%'
@@ -17,7 +18,6 @@ const Mearch = () => {
                 borderRadius='md'
                 cursor='pointer'
                 _hover={{transform: 'scale(1.02)', transition: 'transform .15s linear'}}
-                // _hover={{scale: '2px'}}
                 />
             <Image src='../public/img/shop/shop-3.png' alt='buy mearch banner'
                 w='100%'

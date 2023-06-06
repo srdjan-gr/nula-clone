@@ -29,7 +29,7 @@ const MainLayout = () => {
 
         <Box as='section' bg='#222325'>
           {/* <Flex justifyContent='center' w='1000px' border='1px' borderColor='white' m='0 auto'> */}
-          <Flex justifyContent='center' w='1000px' m='0 auto'>
+          <Flex justifyContent='center' w='1200px' m='0 auto' gap={10}>
             <Coments />
             <Mearch />
           </Flex>
