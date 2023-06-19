@@ -9,8 +9,6 @@ import Coments from '../Components/Coments'
 import Mearch from '../Components/Mearch'
 
 
-
-
 const MainLayout = () => {
 
   const location = useLocation()

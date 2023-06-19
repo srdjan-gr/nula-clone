@@ -5,6 +5,9 @@ import MainLayout from './Layouts/MainLayout'
 import Home from './Pages/Home'
 import Beatz from './Pages/Beatz'
 import Organic from './Pages/Organic'
+import Donatepg from './Pages/Donatepg'
+import DonateLayout from './Layouts/DonateLayout'
+
 
 
 
@@ -14,8 +17,12 @@ const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path='/' element={<MainLayout/>} >
         <Route  index element={<Home/>} />
-        <Route path='/organic'  element={<Organic/>} />
-        <Route path='/beatz' element={<Beatz/>} />
+        <Route path='organic'  element={<Organic/>} />
+        <Route path='beatz' element={<Beatz/>} />
+
+        <Route path='donatepg' element={<DonateLayout/>} >
+          <Route index element={<Donatepg/>}/>
+        </Route>
       </Route>
     )
   )
