@@ -4,9 +4,11 @@ import Playlist from '../Components/Playlist'
 
 const Home = () => {
   return (
-    <Flex h='680px' justifyContent='space-around' pb={10}>
-      <Player/>
-      <Playlist/>
+    <Flex justifyContent='center'>
+      <Flex h='680px' w='1200px' pb={10} flexDir={{sm: 'column', md: 'column', lg: 'row'}} justifyContent='space-between'>
+        <Player/>
+        <Playlist/>
+      </Flex>
     </Flex>
   )
 }
