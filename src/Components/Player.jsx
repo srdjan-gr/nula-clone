@@ -26,9 +26,19 @@ const Player = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [songs, setSongs] = useState([]);
   const [songInfo, setSongInfo] = useState({artist: "", title: "", cover: "",});
-  const [playedHistory, setPlayedHistory] = useState([]);
+  const [playing, setPlaying] = useState([]);
 
   const recordRotate = `${spin} infinite 4s linear`;
+
+
+  const allSongs = () => {
+    songsData.forEach((element) => {
+      setPlaying([...playing, element])
+    })
+  }
+
+  console.log(playing)
+
 
 
   useEffect(() => {
@@ -48,6 +58,8 @@ const Player = () => {
         cover: element.cover,
       });
     });
+
+    allSongs()
 
   }, []);
 
